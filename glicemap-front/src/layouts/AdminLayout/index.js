@@ -45,7 +45,7 @@ const AdminLayout = ({ children }) => {
 
     let mainContainer = (
         <React.Fragment>
-            <NavBar />
+            {windowSize.width < 1000 ? <NavBar /> : <div></div>}
             <div className="pcoded-main-container">
                 <div className={mainClass.join(' ')}>
                     <div className="pcoded-content">
