@@ -18,20 +18,48 @@
         }
     }
 
-    .b-title {
+    .b-title-1 {
         margin-left: 10px;
-        font-weight: 100;
-        color: #fff;
-        font-size: 18px;
+        font-weight: 700;
+        color: #545454;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .b-title-2 {
+        margin-left: 2px;
+        font-weight: 700;
+        color: #0074B7;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .b-subtitle {
+        margin-left: 10px;
+        font-weight: 700;
+        color: #545454;
+        font-size: 9px;
+        letter-spacing: 2px;
     }
 }
 
 .navbar-collapsed {
-    .b-brand .b-title {
+    .b-brand .b-title-1 {
         transform: rotateY(-90deg);
         transform-origin: 0 0;
         opacity: 0;
         transition: all 0.3s ease-in-out;
+    }
+
+    .b-brand .b-title-2 {
+        transform: rotateY(-90deg);
+        transform-origin: 0 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logotipo {
+        opacity: 1;
     }
 
     .mobile-menu {
@@ -42,7 +70,12 @@
     }
 
     &:hover {
-        .b-brand .b-title {
+        .b-brand .b-title-1 {
+            transform: rotateY(0deg);
+            opacity: 1;
+        }
+
+        .b-brand .b-title-2 {
             transform: rotateY(0deg);
             opacity: 1;
         }
@@ -861,9 +894,7 @@
             width: $Menu-collapsed-width;
 
             img {
-                transform: rotateY(-90deg);
                 transform-origin: 0 0;
-                opacity: 0;
                 transition: unset;
             }
 
@@ -1090,7 +1121,7 @@
     }
 
     .pcoded-menu-caption {
-        color: #e8edf7;
+        color: #003B73;
     }
 
     .pcoded-inner-navbar {
@@ -1422,13 +1453,20 @@
             margin-left: 0;
             width: 100%;
 
-            .b-title {
+            .b-title-1 {
+                color: $header-light-text-color;
+            }
+
+            .b-title-2 {
                 color: $header-light-text-color;
             }
 
             &[class*='header-']:not(.header-default) {
-                .b-title {
-                    color: #fff;
+                .b-title-1 {
+                    color: #545454;
+                }
+                .b-title-2 {
+                    color: #0074B7;
                 }
             }
 
@@ -1804,8 +1842,12 @@
                     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
                 }
 
-                .b-title {
-                    color: #fff;
+                .b-title-1 {
+                    color: #545454;
+                }
+
+                .b-title-2 {
+                    color: #0074B7;
                 }
             }
 

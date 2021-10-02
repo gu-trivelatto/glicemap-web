@@ -22,7 +22,8 @@ const NavLogo = () => {
                     <div className="b-bg">
                         <img src={logotipo} className="logotipo" alt="Glicemap"/>
                     </div>
-                    <span className="b-title">Datta Able</span>
+                    <span className="b-title-1">GLICE</span><span className="b-title-2">MAP</span>
+                    <span className="b-subtitle">{"\n"}Controle glicêmico na era digital</span>
                 </Link>
                 <Link
                     to="#"
