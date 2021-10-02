@@ -9,57 +9,42 @@
         border-radius: 10px;
         width: 35px;
         height: 35px;
-        display: inline-flex;
+        display: none;
         align-items: center;
         justify-content: center;
-
-        i {
-            color: #fff;
-        }
+        transform: rotateY(-90deg);
+        transform-origin: 0 0;
     }
 
-    .b-title-1 {
-        margin-left: 10px;
+    .b-title {
+        margin-left: 0px;
         font-weight: 700;
         color: #545454;
         font-size: 26px;
         letter-spacing: 2px;
+        max-height: 4vh;
     }
 
-    .b-title-2 {
-        margin-left: 2px;
-        font-weight: 700;
-        color: #0074B7;
-        font-size: 26px;
-        letter-spacing: 2px;
-    }
-
-    .b-subtitle {
-        margin-left: 10px;
-        font-weight: 700;
-        color: #545454;
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
 }
 
 .navbar-collapsed {
-    .b-brand .b-title-1 {
+    .b-brand .b-title {
         transform: rotateY(-90deg);
         transform-origin: 0 0;
         opacity: 0;
         transition: all 0.3s ease-in-out;
     }
 
-    .b-brand .b-title-2 {
-        transform: rotateY(-90deg);
+    .b-bg {
+        transform: rotateY(0deg);
         transform-origin: 0 0;
-        opacity: 0;
+        display: inline-block;
         transition: all 0.3s ease-in-out;
     }
 
     .logotipo {
         opacity: 1;
+        transition: all 0.3s ease-in-out;
     }
 
     .mobile-menu {
@@ -70,20 +55,24 @@
     }
 
     &:hover {
-        .b-brand .b-title-1 {
+        .b-brand .b-title {
             transform: rotateY(0deg);
             opacity: 1;
-        }
-
-        .b-brand .b-title-2 {
-            transform: rotateY(0deg);
-            opacity: 1;
+            transition: all 0.3s ease-in-out;
         }
 
         .mobile-menu {
             transition-delay: 0.3s;
             transform: rotateY(0deg);
             opacity: 1;
+        }
+
+        .b-bg {
+            transform: rotateY(-90deg);
+            transform-origin: 0 0;
+            opacity: 0;
+            display: none;
+            transition: all 0.3s ease-in-out;
         }
     }
 }
@@ -1453,20 +1442,13 @@
             margin-left: 0;
             width: 100%;
 
-            .b-title-1 {
-                color: $header-light-text-color;
-            }
-
-            .b-title-2 {
+            .b-title {
                 color: $header-light-text-color;
             }
 
             &[class*='header-']:not(.header-default) {
-                .b-title-1 {
+                .b-title {
                     color: #545454;
-                }
-                .b-title-2 {
-                    color: #0074B7;
                 }
             }
 
@@ -1842,12 +1824,8 @@
                     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
                 }
 
-                .b-title-1 {
+                .b-title {
                     color: #545454;
-                }
-
-                .b-title-2 {
-                    color: #0074B7;
                 }
             }
 

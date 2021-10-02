@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ConfigContext } from '../../../../contexts/ConfigContext';
 import * as actionType from '../../../../store/actions';
 import logotipo from '../../../../assets/images/logotipo.png';
+import logo from '../../../../assets/images/logo.svg';
 
 const NavLogo = () => {
     const configContext = useContext(ConfigContext);
@@ -22,8 +23,7 @@ const NavLogo = () => {
                     <div className="b-bg">
                         <img src={logotipo} className="logotipo" alt="Glicemap"/>
                     </div>
-                    <span className="b-title-1">GLICE</span><span className="b-title-2">MAP</span>
-                    <span className="b-subtitle">{"\n"}Controle glicêmico na era digital</span>
+                    <img src={logo} className='b-title' alt="GLICEMAP"></img>
                 </Link>
                 <Link
                     to="#"
