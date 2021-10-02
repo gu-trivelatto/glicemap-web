@@ -69,6 +69,15 @@ strong {
     border-radius: 50%;
 }
 
+.page-header-title  {
+    display: table;
+    width: 100%;
+}
+
+.page-header-title h5, .page-header-title .dud-logout  {
+    display: table-cell;
+}
+
 .page-header-title + .breadcrumb {
     background: transparent;
     padding: 0;

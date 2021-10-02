@@ -1,13 +1,35 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import navigation from '../../../menu-items';
 import { BASE_TITLE, BASENAME } from '../../../config/constant';
+import { API_SERVER } from '../../../config/constant';
+import { LOGOUT } from '../../../store/actions';
 
 const Breadcrumb = () => {
     const [main, setMain] = useState([]);
     const [item, setItem] = useState([]);
+    const account = useSelector((state) => state.account);
+    const dispatcher = useDispatch();
+
+    const handleLogout = () => {
+        axios
+            .post(API_SERVER + 'users/logout', {}, { headers: { Authorization: `${account.token}` } })
+            .then(function (response) {
+                // Force the LOGOUT
+                //if (response.data.success) {
+                dispatcher({ type: LOGOUT });
+                //} else {
+                //    console.log('response - ', response.data.msg);
+                //}
+            })
+            .catch(function (error) {
+                console.log('error - ', error);
+            });
+    };
 
     useEffect(() => {
         navigation.items.map((item, index) => {
@@ -62,6 +84,9 @@ const Breadcrumb = () => {
                             <div className="col-md-12">
                                 <div className="page-header-title">
                                     <h5 className="m-b-10">{title}</h5>
+                                    <Link to="/" className="dud-logout" onClick={handleLogout} title="Logout">
+                                        <i className="feather icon-log-out" /><span> Logout</span>
+                                    </Link>
                                 </div>
                                 <ListGroup as="ul" bsPrefix=" " className="breadcrumb">
                                     <ListGroup.Item as="li" bsPrefix=" " className="breadcrumb-item">
