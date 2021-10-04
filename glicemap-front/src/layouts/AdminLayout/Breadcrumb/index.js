@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import navigation from '../../../menu-items';
-import { BASE_TITLE, BASENAME } from '../../../config/constant';
+import { BASENAME } from '../../../config/constant';
 import { API_SERVER } from '../../../config/constant';
 import { LOGOUT } from '../../../store/actions';
 

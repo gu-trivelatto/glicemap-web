@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-import NavLeft from './NavLeft';
-import NavRight from './NavRight';
-
 import { ConfigContext } from '../../../contexts/ConfigContext';
 import * as actionType from '../../../store/actions';
 
@@ -22,8 +19,6 @@ const NavBar = () => {
     const navToggleHandler = () => {
         dispatch({ type: actionType.COLLAPSE_MENU });
     };
-
-    let collapseClass = ['collapse navbar-collapse'];
 
     let navBar = (
         <React.Fragment>
