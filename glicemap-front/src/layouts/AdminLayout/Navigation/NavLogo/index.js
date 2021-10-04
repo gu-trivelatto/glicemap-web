@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { ConfigContext } from '../../../../contexts/ConfigContext';
 import * as actionType from '../../../../store/actions';
-import logotipo from '../../../../assets/images/logotipo.png';
+import logotipo from '../../../../assets/images/logotipo.svg';
 import logo from '../../../../assets/images/logo.svg';
 
 const NavLogo = () => {
@@ -21,7 +21,7 @@ const NavLogo = () => {
             <div className="navbar-brand header-logo">
                 <Link to="#" className="b-brand">
                     <div className="b-bg">
-                        <img src={logotipo} className="logotipo" alt="Glicemap"/>
+                        <img src={logotipo} className="logotipo" alt="GLICEMAP"/>
                     </div>
                     <img src={logo} className='b-title' alt="GLICEMAP"></img>
                 </Link>
