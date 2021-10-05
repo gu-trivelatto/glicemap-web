@@ -892,3 +892,44 @@ p.text-muted {
     -webkit-font-smoothing: antialiased;
 }
 /* material icon for material datetime picker */
+
+.card-body .mb-1 {
+    font-weight: bold;
+}
+
+.filter-button {
+    margin-top: 20px;
+}
+
+.filter-button button {
+    float: right;
+    margin-right: 0;
+}
+
+.filter-and {
+    font-size: 18px;
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.Pacients-List a {
+    color: #27272E;
+}
+
+.progress-registers {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.progress-registers.percentage {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.progress-registers.col-xl-12 {
+    padding: 0;
+}
+
+.progress-bar {
+    background-color: #A6B7D4;
+}
