@@ -1,21 +1,23 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-
-import Card from '../../../components/Card/MainCard';
+import { Row, Col, Card } from 'react-bootstrap';
 
 const SamplePage = () => {
     return (
         <React.Fragment>
             <Row>
                 <Col>
-                    <Card title="Hello Card" isOption>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum."
-                        </p>
+                    <Card>
+                        <Card.Body>
+                            <p class="new-patient-text">
+                                Para se vincular a um novo paciente, informe-o seu código individual:
+                            </p>
+                            <p class="new-patient-code">
+                                7A5b6T
+                            </p>
+                            <p class="new-patient-text">
+                                O paciente deve inserir este código na tela "Meu Médico" da seção "Configurações" do aplicativo para que o vínculo seja realizado.
+                            </p>
+                        </Card.Body>
                     </Card>
                 </Col>
             </Row>

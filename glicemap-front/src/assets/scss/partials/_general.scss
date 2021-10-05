@@ -933,3 +933,22 @@ p.text-muted {
 .progress-bar {
     background-color: #A6B7D4;
 }
+
+.new-patient-text {
+    font-size: 18pt;
+    font-weight: 800;
+    margin: 4vh 16vw;
+    text-align: center;
+    justify-content: center;
+    color: #003b73;
+}
+
+.new-patient-code {
+    font-size: 18pt;
+    font-weight: 800;
+    margin: auto;
+    width: 120px;
+    text-align: center;
+    background-color: #bfd7ed40;
+    color: $primary-color;
+}
