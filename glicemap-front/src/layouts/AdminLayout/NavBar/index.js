@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { ConfigContext } from '../../../contexts/ConfigContext';
 import * as actionType from '../../../store/actions';
+import logo from '../../../assets/images/logo.svg';
 
 const NavBar = () => {
     const configContext = useContext(ConfigContext);
@@ -24,13 +25,10 @@ const NavBar = () => {
         <React.Fragment>
             <div className="m-header">
                 <Link to="#" className={toggleClass.join(' ')} id="mobile-collapse" onClick={navToggleHandler}>
-                    <span />
+                    <i className="feather icon-menu" />
                 </Link>
                 <Link to="#" className="b-brand">
-                    <div className="b-bg">
-                        <i className="feather icon-trending-up" />
-                    </div>
-                    <span className="b-title">Datta Able</span>
+                    <img src={logo} className='b-title' alt="GLICEMAP"></img>
                 </Link>
                 {/* <Link to='#' className={moreClass.join(' ')} onClick={() => setMoreToggle(!moreToggle)}>
                     <i className="feather icon-more-vertical"/>
