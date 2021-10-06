@@ -12,7 +12,6 @@ const DashDefault = () => {
                             <Card.Title as="h5">FILTRO</Card.Title>
                         </Card.Header>
                         <Card.Body>
-                            
                                 <Form>
                                     <Row>
                                         <Col md={6} xl={3}>
@@ -79,7 +78,7 @@ const DashDefault = () => {
                                 <tbody>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Robert Fox</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Robert Fox</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -109,7 +108,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Darlene Robertson</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Darlene Robertson</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -139,7 +138,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Theresa Webb</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Theresa Webb</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -169,7 +168,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Kristin Watson</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Kristin Watson</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -199,7 +198,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Cody Fisher</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Cody Fisher</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -229,7 +228,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Jane Cooper</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Jane Cooper</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -259,7 +258,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Jerome Bell</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Jerome Bell</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -289,7 +288,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Jenny Wilson</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Jenny Wilson</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -319,7 +318,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Darrell Steward</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Darrell Steward</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">
@@ -349,7 +348,7 @@ const DashDefault = () => {
                                     </tr>
                                     <tr className="unread">
                                         <td class="col-xl-4">
-                                            <a href="#" as="h6" className="mb-1">Savannah Nguyen</a>
+                                            <a href="/patient-list/patient" as="h6" className="mb-1">Savannah Nguyen</a>
                                         </td>
                                         <td class="col-xl-4">
                                             <h6 className="text-muted">

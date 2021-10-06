@@ -88,6 +88,12 @@ const routes = [
 
             {
                 exact: true,
+                path: '/patient-list/patient',
+                component: lazy(() => import('./views/dashboard/Patient'))
+            },
+
+            {
+                exact: true,
                 path: '/basic/button',
                 component: lazy(() => import('./views/ui-elements/basic/BasicButton'))
             },

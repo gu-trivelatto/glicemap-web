@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import { Row, Col, Card, Form, Button, InputGroup, FormControl, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Row, Col, Card, Form, Button } from 'react-bootstrap';
 
 const FormsElements = () => {
     const [validated, setValidated] = useState(false);
-    const [validatedTooltip, setValidatedTooltip] = useState(false);
-    const [supportedCheckbox, setSupportedCheckbox] = useState(false);
-    const [supportedRadio, setSupportedRadio] = useState(false);
-    const [supportedSelect, setSupportedSelect] = useState(0);
-    const [supportedFile, setSupportedFile] = useState(0);
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -16,23 +11,6 @@ const FormsElements = () => {
             event.stopPropagation();
         }
         setValidated(true);
-    };
-
-    const handleSubmitTooltip = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        setValidatedTooltip(true);
-    };
-
-    const supportedSelectHandler = (event) => {
-        setSupportedSelect(parseInt(event.target.value));
-    };
-
-    const supportedFileHandler = (event) => {
-        setSupportedFile(!!event.target.value);
     };
 
     return (
@@ -74,7 +52,7 @@ const FormsElements = () => {
                                         <Form.Label>Confirme a Nova Senha</Form.Label>
                                         <Form.Control type="password" placeholder="Confirme sua nova senha" />
                                     </Form.Group>
-                                    <Button variant="primary" style={{float:"right", margin:"0"}}>Salvar</Button>
+                                    <Button variant="primary" onClick={(e) => handleSubmit(e)} style={{float:"right", margin:"0"}}>Salvar</Button>
                                 </Col>
                             </Row>
                         </Card.Body>
